@@ -12,16 +12,19 @@ Create a Deployment using the published Docker Hub image:
 
 ```bash
 kubectl create deployment random-logger --image=ajay26188/random-logger:1.0
+```
 
-### Verify it’s running
+### Verify
+Verify it's running:
 
 ```bash
 kubectl get deployments
 kubectl get pods
-
+```
 
 ### View logs
 
 ```bash
 kubectl logs -f deployment/random-logger
+```
 
